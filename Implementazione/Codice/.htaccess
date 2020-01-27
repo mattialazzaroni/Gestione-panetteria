@@ -1,0 +1,14 @@
+#Regola che reindirizza l'utente alla pagina di errore se egli inserisce un file che non esiste.
+RewriteEngine on
+ErrorDocument 404  http://samtinfo.ch/gestionealloggi2019/errore.php
+
+#RULES FOR ERROR PAGES DIRECTORY IN CASE OF localhost
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule .? localhost/errore.php [L]
+
+#RULES FOR ERROR PAGES DIRECTORY IN CASE OF remote server (actual webpage on public server)
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{HTTP_HOST} !^localhost [NC]
+#RewriteRule .? samtinfo.ch/gestionealloggi2019/errore.php [L]

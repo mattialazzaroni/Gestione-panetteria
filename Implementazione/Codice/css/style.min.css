@@ -1,0 +1,72 @@
+#applyCSS .dropdown.dropdown-lg .dropdown-menu {
+    margin-top: -1px!important;
+    padding: 6px 20px!important;
+}
+#applyCSS .input-group-btn .btn-group {
+    display: flex !important;
+}
+#applyCSS .btn-group .btn {
+    margin-left: -1px!important;
+}
+.applica-filtro{
+    border-top-right-radius: 4px!important;
+    border-bottom-right-radius: 4px!important;
+    border-top-left-radius: 4px!important;
+    border-bottom-left-radius: 4px!important;
+}
+.cerca{
+    border-top-right-radius: 4px!important;
+    border-bottom-right-radius: 4px!important;
+}
+#applyCSS .form-horizontal .form-group {
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+
+@media screen and (min-width: 768px) {
+    #applyCSS #adv-search {
+        width: 420px!important;
+        margin: 0 auto!important;
+    }
+    #applyCSS .dropdown.dropdown-lg {
+        position: static !important;
+    }
+    #applyCSS .dropdown.dropdown-lg .dropdown-menu {
+        min-width: 420px!important;
+    }
+}
+
+.glyphicon{ 
+    position:relative!important;
+    top:1px!important; 
+    display:inline-block!important;
+    font-family:'Glyphicons Halflings'!important;
+    font-style:normal!important;
+    font-weight:400!important;
+    line-height:1!important;
+    -webkit-font-smoothing:antialiased!important;
+    -moz-osx-font-smoothing:grayscale!important;
+}
+
+.copyright, .copyright:hover{
+    text-decoration: underline;
+}
+
+option[value='nessuno'][disabled] {
+    background-color: gray;
+}
+
+.statusmsg{
+    font-size: 12px; /* Set message font size  */
+    padding: 3px; /* Some padding to make some more space for our text  */
+    background: #EDEDED; /* Add a background color to our status message   */
+    border: 1px solid #DFDFDF; /* Add a border arround our status message   */
+}
+
+#formCerca{
+    display: contents;
+}
+
+#applyCSS .dropdown.dropdown-lg {
+    display: -webkit-inline-box!important;
+}
